@@ -18,7 +18,7 @@ jobs:
       - name: print repository name
         run: echo "The repository name is ${{ github.repository }}"
       - name: print commit event message
-        run: echo "First commit event message is ${{ github.event.commits[0].message }}
+        run: echo "First commit event message is ${{ github.event.commits[0].message }}"
   
     
     
