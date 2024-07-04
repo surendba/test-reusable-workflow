@@ -4,6 +4,6 @@ on: [push]
 
 jobs:
   call-workflow:
-    uses: surendba/githook-test/.github/workflows/main.yml@main
+    uses: surendba/githook-test/.github/workflows/main.yml@master
     with:
       greeting: "Hello from another repo!"
