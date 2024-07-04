@@ -1,0 +1,9 @@
+name: Call Reusable Workflow
+
+on: [push]
+
+jobs:
+  call-workflow:
+    uses: surendba/githook-test/.github/workflows/main.yml@main
+    with:
+      greeting: "Hello from another repo!"
