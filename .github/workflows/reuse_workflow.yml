@@ -5,7 +5,18 @@ on:
   workflow_dispatch:
 
 jobs:
+  
+    
   call-workflow:
     uses: surendba/githook-test/.github/workflows/main.yml@master
     with:
       greeting: "Hello from another repo!"
+
+  print-repo-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print repository name
+        run: echo "The repository name is ${{ github.repository }}"  
+  
+    
+    
